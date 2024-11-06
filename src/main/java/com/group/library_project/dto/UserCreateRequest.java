@@ -7,4 +7,5 @@ public class UserCreateRequest {
 
     private String name;
     private Integer age;
+
 }
