@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ListPage = () => {
+const MainPage = () => {
 
     async function createUser(e){
         e.preventDefault(); // 동작제어
@@ -10,7 +10,7 @@ const ListPage = () => {
                 "Content-type": "application/json"
                 ,}
         }).then(function(){
-            console.log("성공");
+            alert("등록 성공");
         });
     }
     return (
@@ -120,4 +120,4 @@ const ListPage = () => {
     );
 }
 
-export default ListPage;
+export default MainPage;
