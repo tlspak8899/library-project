@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import ListPage from './page/list/listPage'
+import MainPage from './page/mainPage'
 import Navigation from "./component/navigation";
 
 function App() {
   return (
       <div>
         <Navigation></Navigation>
-        <ListPage></ListPage>
+        <MainPage></MainPage>
       </div>
   );
 }

@@ -26,7 +26,7 @@ public class UserController {
         log.info("request 값 : ( {} , {} )",request.getAge(),request.getName()); // log.info 를 사용할때 매개변수화된 로그메시지를 사용해주는게 좋다. gradle 에 annotationProcessor 추가해줘야함 롬복 컴파일 에러 방지
     }
 
-    @GetMapping("/api/user")
+    @GetMapping("/api/getUser")
     public List<UserResponse> getUsers() {
         List<UserResponse> reponses = new ArrayList<>();
         for (int i = 0; i < users.size(); i++) {
