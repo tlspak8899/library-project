@@ -1,21 +1,15 @@
 import axios from 'axios';
-import {useState} from "react";
 
 const ListPage = () => {
-    //함수 정의 :: getter / setter 같은.
-    const [user_name, setUser_name] = useState();
-    const [user_age , setUser_age] = useState();
 
     async function createUser(e){
         e.preventDefault(); // 동작제어
         const formData = new FormData(document.getElementById('createForm'));
-        await axios.post({
-            method : 'post',
-            url : "http://localhost:8080/createUser",
-            withCredentials : true,
-            data : formData,
-            headers: {'Content-type': 'application/json'}
-        }).then(function(response){
+        await axios.post("http://localhost:8080/api/createUser",formData,{
+            headers: {
+                "Content-type": "application/json"
+                ,}
+        }).then(function(){
             console.log("성공");
         });
     }
