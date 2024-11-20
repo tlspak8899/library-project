@@ -1,11 +1,5 @@
-
-
-
 const List = () => {
-    return(
-        <div>잠</div>
-    );
-}
-
+    return <div>List Page</div>;
+};
 
 export default List;
