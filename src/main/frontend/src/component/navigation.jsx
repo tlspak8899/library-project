@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
     return (
@@ -30,10 +31,10 @@ const Navigation = () => {
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                   aria-current="page">등록하기</a>
-                                <a href="#"
-                                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">목록</a>
+                                <Link to="/" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                   aria-current="page">메인</Link>
+                                <Link to="/list"
+                                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">목록</Link>
                             </div>
                         </div>
                     </div>
