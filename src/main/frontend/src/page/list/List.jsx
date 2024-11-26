@@ -12,6 +12,7 @@ const List = () => {
         setBoardList(dataList);
     }*/
 
+
     useEffect(async () => {
         await axios.get('http://localhost:8080/api/getUser')
             .then((res) => {
