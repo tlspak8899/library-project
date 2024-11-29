@@ -8,11 +8,9 @@ const List = () => {
 
     //axios 로 api 호출
 /*    const getList = async () => {
-        const dataList = (await axios.get('http://localhost:8080/api/getUser')).data;
+        const dataList = (await axios. get('http://localhost:8080/api/getUser')).data;
         setBoardList(dataList);
     }*/
-
-
     useEffect(async () => {
         await axios.get('http://localhost:8080/api/getUser')
             .then((res) => {

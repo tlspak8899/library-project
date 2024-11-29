@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "library-project"
+  thymeleaf:
+    cache: false
+  datasource:
+    url: "jdbc:mysql://localhost:3306/library"
+    username: "root"
+    password: "6982"
+    driver-class-name: com.mysql.cj.jdbc.Driver
